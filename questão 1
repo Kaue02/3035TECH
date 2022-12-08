@@ -1,1 +1,29 @@
-fgdg
+//feito em java
+		int valores[] = {1,2,3,4,5,6,6};
+
+		int menorV = valores[0];
+
+		for (int i = 1; i < valores.length; i++) {
+			if (valores[i] < menorV) {
+				menorV = valores[i];
+			}
+		}
+
+		int maiorV = menorV;
+
+		for (int i = 0; i < valores.length; i++) {
+			if (valores[i] > maiorV) {
+				maiorV = valores[i];
+			}
+		}
+
+		int segundoMaiorValor = menorV;
+
+		for (int i = 0; i < valores.length; i++) {
+			if ((valores[i] > menorV) && (valores[i] != maiorV)) {
+				menorV = valores[i];
+				segundoMaiorValor = menorV;
+			}
+		}
+
+		System.out.println("Segundo Maior Valor: " + segundoMaiorValor);
