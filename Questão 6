@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Questão6 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite o 1º número");
+		double num1 = scan.nextDouble();
+		System.out.println("Digite o 2º número, ele será somado com o primeiro");
+		double num2 = scan.nextDouble();
+		double soma;
+		double med;
+		
+		soma = (num1 + num2);
+		med = (soma/2);
+		System.out.println("A soma é " + soma);
+		System.out.printf("A média é: %.2f", med);
+		
+	}
+
+}
