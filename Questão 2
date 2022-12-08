@@ -1,0 +1,6 @@
+import java.util.Scanner;
+//feito em java
+Scanner scan = new Scanner(System.in);
+		String frase = scan.next();
+		System.out.println(new StringBuilder(frase).reverse().toString());
+		
