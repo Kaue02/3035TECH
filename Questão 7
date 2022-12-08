@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Questão7 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		System.out.println("Digite o valor, será calculado 5%, 25% e 150% deste valor.");
+		double num1 = scan.nextDouble();
+		double por5 = num1 *0.05;
+		double por50 = num1 *0.5;
+		double por150 = num1 *1.5;
+		
+		
+		System.out.printf("%.1f", por5);
+		System.out.printf("\n%.2f", por50);
+		System.out.printf("\n%.3f", por150);
+	}
+
+}
