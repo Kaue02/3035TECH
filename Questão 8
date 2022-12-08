@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Questão8 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite o valor 1");
+		double num1 = scan.nextDouble();
+		System.out.println("Digite o valor 2");
+		double num2 = scan.nextDouble();
+		System.out.println("Digite a operação, 1 = soma, 2 = subtração, 3 = multiplicação e 4 = divisão");
+		int op = scan.nextInt();
+		
+			switch (op) {
+			case 1:
+				System.out.println(num1 + num2);
+				break;
+
+			case 2:
+				System.out.println(num1 - num2);
+				break;
+
+			case 3:
+				System.out.println(num1 * num2);
+				break;
+
+			case 4:
+				System.out.println(num1 / num2);
+				break;
+				
+				default: 
+					System.out.println("Opção inválida!");
+			}
+		
+
+	}
+
+}
